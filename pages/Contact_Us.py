@@ -3,7 +3,7 @@ from send_email import send_email
 
 st.header("Contact me")
 
-with ((st.form(key="form"))):
+with st.form(key="form"):
     user_email = st.text_input("Your email address")
     message = st.text_area("Your message")
     message = f"""Subject: Portfolio Website - {user_email}\n
